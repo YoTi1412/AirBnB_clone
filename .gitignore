@@ -1,0 +1,4 @@
+.vscode
+.devcontainer
+.DS_Store
+generate-authors.sh
