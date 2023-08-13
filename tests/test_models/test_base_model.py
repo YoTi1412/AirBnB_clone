@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""Unittest test_base_model module"""
+
 from datetime import datetime
 from models.base_model import BaseModel
 import unittest
@@ -6,6 +9,8 @@ import pycodestyle
 
 
 class TestBaseModel(unittest.TestCase):
+    """Test cases for the BaseModel class"""
+
     def test_pycodestyle(self):
         """Test that the code follows pycodestyle guidelines"""
         style = pycodestyle.StyleGuide(quiet=True)
@@ -76,4 +81,3 @@ class TestBaseModel(unittest.TestCase):
         my_model = BaseModel()
         my_dict = my_model.to_dict()
         self.assertEqual(my_dict["id"], my_model.id)
-
